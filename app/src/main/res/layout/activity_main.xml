@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pruebafinal.com.pruebafinal.MainActivity"
+    android:background="#fcfcfc">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_height="300dp"
+        android:layout_width="match_parent"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/colappsingtoobar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/iga"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="48dp"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll"
+            app:title="App Title">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toobarid"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+
+
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.demotxt.droidsrce.homedashboard.Home"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="#fcfcfc"
+            android:gravity="center"
+            android:id="@+id/ll">
+            <LinearLayout
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.CardView
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:id="@+id/bankcardId"
+                    android:layout_width="140dp"
+                    android:layout_height="170dp"
+                    android:layout_margin="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:background="@drawable/cerclebackgroundpurple"
+                            android:src="@drawable/ic_attach_money_black_24dp"
+                            android:padding="10dp"/>
+
+                        <TextView
+                            android:layout_width="57dp"
+                            android:layout_height="36dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Estudios Privados"
+                            android:textStyle="bold" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/lightgray"
+                            android:layout_margin="10dp"/>
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:id="@+id/publicas"
+                    android:layout_width="140dp"
+                    android:layout_height="170dp"
+                    android:layout_margin="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:background="@drawable/cerclebackgroundpink"
+                            android:src="@drawable/ic_lightbulb_outline_black_24dp"
+                            android:padding="10dp"/>
+
+                        <TextView
+                            android:layout_width="64dp"
+                            android:layout_height="39dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Estudios Publicos"
+                            android:textStyle="bold" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/lightgray"
+                            android:layout_margin="10dp"/>
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.CardView
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:id="@+id/religiosas"
+                    android:layout_width="140dp"
+                    android:layout_height="170dp"
+                    android:layout_margin="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:background="@drawable/cerclebackgroundgreen"
+                            android:src="@drawable/ic_control_point_black_24dp"
+                            android:padding="10dp"/>
+
+                        <TextView
+                            android:layout_width="72dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Estudios Religiosos"
+                            android:textStyle="bold" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/lightgray"
+                            android:layout_margin="10dp"/>
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:id="@+id/militares"
+                    android:layout_width="140dp"
+                    android:layout_height="170dp"
+                    android:layout_margin="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:background="@drawable/cerclebackgroundyellow"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_lightbulb_outline_black_24dp" />
+
+                        <TextView
+                            android:layout_width="78dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Estudios Militares"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="10dp"
+                            android:background="@color/lightgray" />
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

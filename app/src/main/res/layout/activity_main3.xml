@@ -1,0 +1,87 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:id="@+id/imagen_colegio"
+                android:src="@drawable/iga"/>
+        </LinearLayout>
+    </ScrollView>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/piga"
+        android:backgroundTint="@color/color1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/texto_colegio"
+                android:text="IGA"
+                android:textSize="30dp"
+                android:textColor="#000"
+                android:padding="8dp"
+                android:gravity="center"
+                android:textStyle = "bold"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/ubi"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_location_on_white_48dp"
+                    android:layout_gravity="end"
+
+                    android:padding="4dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Informacion"
+                android:gravity="center"
+                android:id="@+id/titulo_historia"
+                android:textSize="25dp"
+                android:textColor="#000"
+                android:layout_margin="4dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/descripcion"
+                    android:textSize="20dp"
+                    android:textColor="#000"
+                    android:text="Aqui se estudia"
+                    android:padding="4dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
